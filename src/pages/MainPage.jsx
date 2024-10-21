@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Aboutus from "../components/Aboutus";
 import Contactus from "../components/Contactus";
-import Docs from "../components/Docs";
+import { Downloads } from "./Downloads";
 
 import React from "react";
 
@@ -11,7 +11,8 @@ const MainPage = () => {
       <NavBar />
       <Aboutus />
       <Contactus />
-      <Docs/>
+      <Downloads/>
+      
     </div>
   );
 };
