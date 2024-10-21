@@ -32,6 +32,7 @@ const Presentation = () => {
   ];
 
   return (
+    <section id="kidstc-presentation">
     <div className="flex items-center justify-center p-8">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-4 justify-items-center">
         {phases.map((phase, index) => (
@@ -49,6 +50,7 @@ const Presentation = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

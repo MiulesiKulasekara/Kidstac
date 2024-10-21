@@ -5,6 +5,10 @@ const Problem = () => {
     "How can technology be used to create educational apps for children that combine learning activities with physical movement? This would help kids develop balance while ensuring they stay active.";
 
   return (
+    <section id="kidstc-problem">
+      <h2 className="mb-4 text-2xl font-bold text-gray-800">
+            Research Problem
+          </h2>
     <div className="flex items-center justify-center w-full p-10">
       {/* Image Div */}
       <div
@@ -22,6 +26,7 @@ const Problem = () => {
         {question}
       </div>
     </div>
+    </section>
   );
 };
 

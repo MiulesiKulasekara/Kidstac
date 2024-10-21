@@ -4,6 +4,7 @@ import logoImg from "../assets/kidstac-logo.png";
 
 const Footer = () => {
   return (
+    <section>
     <footer className="bg-[#f9f3e7] py-2">
       <div className="container flex flex-col items-start justify-between mx-auto md:flex-row md:items-center">
         {/* Logo and Info */}
@@ -33,6 +34,7 @@ const Footer = () => {
         <p>Kidstac © All Rights Reserved - 2024</p>
       </div>
     </footer>
+    </section>
   );
 };
 

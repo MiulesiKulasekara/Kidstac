@@ -40,6 +40,7 @@ const Docs = () => {
   ];
 
   return (
+    <section id="kidstc-documents">
     <div className="flex items-center justify-center p-8">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-5">
         {phases.map((phase, index) => (
@@ -57,6 +58,7 @@ const Docs = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

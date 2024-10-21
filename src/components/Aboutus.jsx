@@ -94,6 +94,7 @@ const MemberCircle = ({ member }) => (
 
 const Aboutus = () => {
   return (
+    <section id='kidstc-aboutus'>
     <div className="container px-4 py-8 mx-auto">
       <div className="flex justify-center gap-8 mb-8">
         {memberData.slice(0, 2).map((member, index) => (
@@ -107,6 +108,7 @@ const Aboutus = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

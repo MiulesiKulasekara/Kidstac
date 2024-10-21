@@ -7,6 +7,7 @@ const HeroSection = () => {
     "Unlock a world of fun and learning with Kidstack, where education meets movement! Help your child grow through interactive play, Augmented Reality adventures, and real-world challenges. Engage in activities that sharpen the mind and strengthen the body—start your child’s journey of discovery today!";
 
   return (
+    <section id="kidstc-herosection">
     <div className="flex">
       <div className="my-40 ml-20 text-left">
         <h1 className="mb-8 text-6xl font-bold">{title}</h1>
@@ -25,6 +26,7 @@ const HeroSection = () => {
       </div>
       <img src={heroImg} alt="Hero" className="h-auto max-w-xs mr-20" />
     </div>
+    </section>
   );
 };
 

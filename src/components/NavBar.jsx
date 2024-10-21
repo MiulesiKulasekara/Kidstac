@@ -29,7 +29,7 @@ const NavBar = () => {
 
         <div className="justify-between hidden w-full md:flex">
           <div className="flex items-center space-x-5 lg:space-x-8">
-            <a href="http://localhost/8080" className={navItemClasses}>
+            <a href="#kidstck-herosection" className={navItemClasses}>
               Home
             </a>
 
@@ -38,34 +38,34 @@ const NavBar = () => {
               onMouseLeave={() => setIsDomainOpen(false)}
               className="relative"
             >
-              <a href="#" className={navItemClasses}>
+              <a href="#kidstc-projectscope" className={navItemClasses}>
                 Project Scope
               </a>
               {isDomainOpen && (
                 <div className="absolute left-0 z-10 py-2 bg-white rounded-md shadow-lg top-full">
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-litreview" className={dropdownItemClasses}>
                     Literature Review
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-gap" className={dropdownItemClasses}>
                     Research Gap
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-problem" className={dropdownItemClasses}>
                     Research Problem
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-objectives" className={dropdownItemClasses}>
                     Research Objectives
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-methodology" className={dropdownItemClasses}>
                     Methodology
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-technology" className={dropdownItemClasses}>
                     Technology Used
                   </a>
                 </div>
               )}
             </div>
 
-            <a href="#" className={navItemClasses}>
+            <a href="#kidstc-milestones" className={navItemClasses}>
               Milestones
               {/* <div className="ml-"></div> */}
             </a>
@@ -75,25 +75,25 @@ const NavBar = () => {
               onMouseLeave={() => setIsDownloadsOpen(false)}
               className="relative"
             >
-              <a href="#" className={`${navItemClasses} ml-24`}>
+              <a href="#kidstc-downloads" className={`${navItemClasses} ml-24`}>
                 Downloads
               </a>
               {isDownloadsOpen && (
                 <div className="absolute left-0 z-10 py-2 bg-white rounded-md shadow-lg top-full">
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-documents" className={dropdownItemClasses}>
                     Documents
                   </a>
-                  <a href="#" className={dropdownItemClasses}>
+                  <a href="#kidstc-presentation" className={dropdownItemClasses}>
                     Presentation Slides
                   </a>
                 </div>
               )}
             </div>
 
-            <a href="#" className={navItemClasses}>
+            <a href="#kidstc-aboutus" className={navItemClasses}>
               About us
             </a>
-            <a href="#" className={navItemClasses}>
+            <a href="#kidstc-contactus" className={navItemClasses}>
               Contact us
             </a>
           </div>
@@ -102,7 +102,7 @@ const NavBar = () => {
 
       {isMenuOpen && (
         <div className="absolute left-0 right-0 bg-white shadow-lg top-full md:hidden">
-          <a href="http://localhost/8080" className={mobileNavItemClasses}>
+          <a href="#" className={mobileNavItemClasses}>
             Home
           </a>
           <a href="#" className={mobileNavItemClasses}>

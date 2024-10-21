@@ -3,6 +3,7 @@ import { Instagram, Twitter, Facebook, ArrowRight } from 'lucide-react';
 
 const Contactus = () => {
   return (
+    <section id='kidstc-contactus'>
     <div className="flex items-center justify-center">
       <div className="relative w-full max-w-2xl p-8 rounded-3xl">
 
@@ -48,6 +49,7 @@ const Contactus = () => {
         </div> */}
       </div>
     </div>
+    </section>
   );
 };
 
