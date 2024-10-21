@@ -57,7 +57,7 @@ const memberData = [
     linkedin: "https://www.linkedin.com"
   },
   {
-    name: "DombawelaH.M.D.L.B.A",
+    name: "Dombawela H.M.D.L.B.A",
     profilePic: dinushaImage,
     title: "Group Member",
     subtitle: "Undergraduate",
