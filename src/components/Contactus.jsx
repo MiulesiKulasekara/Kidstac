@@ -3,8 +3,8 @@ import { Instagram, Twitter, Facebook, ArrowRight } from 'lucide-react';
 
 const Contactus = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="relative w-full max-w-2xl p-8 bg-white shadow-lg bg- rounded-3xl">
+    <div className="flex items-center justify-center">
+      <div className="relative w-full max-w-2xl p-8 rounded-3xl">
 
         <div className="mb-8 text-center">
           {/* <h6 className="text-[#f4a261] uppercase tracking-wide">Contact Us</h6> */}
@@ -32,7 +32,7 @@ const Contactus = () => {
           </button>
         </form>
 
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           <p className="mb-2 font-semibold text-black">Follow us:</p>
           <div className="flex justify-center space-x-4">
             <a href="#" className="text-[#F79733] hover:text-[#e76f51]">
@@ -45,7 +45,7 @@ const Contactus = () => {
               <Facebook size={24} />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import Aboutus from "../components/Aboutus";
-import Contactus from "../components/Contactus";
 import Downloads  from "./Downloads";
 import ProjectScope from "./ProjectScope";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -12,11 +12,9 @@ const MainPage = () => {
       <NavBar />
       <HeroSection/>
       <ProjectScope/>
-      <Aboutus />
-      <Contactus />
       <Downloads/>
-
-      
+      <Aboutus />  
+      <Footer/>
     </div>
   );
 };
