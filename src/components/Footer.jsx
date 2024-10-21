@@ -4,15 +4,14 @@ import logoImg from "../assets/kidstac-logo.png";
 
 const Footer = () => {
   return (
-    <section>
-    <footer className="bg-[#f9f3e7] py-2">
+    <footer className="dark:bg-neutral-800 py-2 text-white">
       <div className="container flex flex-col items-start justify-between mx-auto md:flex-row md:items-center">
         {/* Logo and Info */}
         <div className="flex flex-col items-start">
           <div>
             <img src={logoImg} className="w-auto h-40" />
           </div>
-          <p className="mb-4 text-sm text-gray-600">
+          <p className="mb-4 text-sm w-2/3">
             Unlock a world of fun and learning with Kidstack, where education
             meets movement! Help your child grow through interactive play.
           </p>
@@ -34,7 +33,6 @@ const Footer = () => {
         <p>Kidstac © All Rights Reserved - 2024</p>
       </div>
     </footer>
-    </section>
   );
 };
 
