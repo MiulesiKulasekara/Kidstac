@@ -1,11 +1,13 @@
+import MainPage from './pages/MainPage';
+import './index.css';
+
 function App() {
- 
   return (
     <>
-      Kidstack
-        
+      <MainPage/>
+      {/* <Test/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
