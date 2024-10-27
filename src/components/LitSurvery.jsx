@@ -154,10 +154,10 @@ const LitSurvery = () => {
 
   return (
     <section id="kidstc-litreview">
-      <div style={{ backgroundColor: "#f5f5f5" }} className="px-20 pt-10">
+      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-10 pb-10">
         <div>
           <h1
-            className="mb-4 text-3xl font-bold text-gray-800"
+            className="mb-4 text-3xl font-bold"
             style={{ color: "#F79733" }}
           >
             Literature Survey
@@ -167,14 +167,14 @@ const LitSurvery = () => {
           <div key={index} className="border-b border-slate-200">
             <button
               onClick={() => toggleAccordion(index)}
-              className="flex items-center justify-between w-full py-5 text-slate-800"
+              className="flex items-center justify-between w-full py-5 text-white"
             >
               <h3
-                className="text-2xl font-semibold text-gray-800"
+                className="text-2xl font-semibold text-white"
               >
                 {item.title}
               </h3>
-              <span className="transition-transform duration-300 text-slate-800">
+              <span className="text-white transition-transform duration-300">
                 {activeIndex === index ? <DownIcon /> : <UpIcon />}
               </span>
             </button>
@@ -186,7 +186,7 @@ const LitSurvery = () => {
                 activeIndex === index ? "max-h-screen" : "max-h-0"
               }`}
             >
-              <div className="pb-5 text-sm text-slate-500">{item.content}</div>
+              <div className="pb-5 text-white text-md">{item.content}</div>
             </div>
           </div>
         ))}
