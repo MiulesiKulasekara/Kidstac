@@ -8,7 +8,7 @@ import Timeline from "./TimeLine";
 
 const MainPage = () => {
   return (
-    <div style={{ backgroundColor: "#F79733" }}>
+    <div style={{ backgroundColor: "#FFA756" }}>
       <NavBar />
       <HeroSection />
       <ProjectScope />
