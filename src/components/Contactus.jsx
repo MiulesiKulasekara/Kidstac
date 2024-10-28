@@ -61,7 +61,7 @@ const Contactus = () => {
               rows="4"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-2 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f4a261]"
+              className="w-full px-4 py-2 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f4a261] text-gray-900"
             ></textarea>
             <button
               type="submit"
