@@ -26,7 +26,8 @@ const Gap = () => {
 
   return (
     <section id="kidstc-gap">
-      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-10 pb-10">
+      <div className="min-h-0.5"></div>
+      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-40 pb-40">
         <div>
           <h1 className="mb-8 text-3xl font-bold text-left" style={{ color: "#F79733" }}>
             Research Gap

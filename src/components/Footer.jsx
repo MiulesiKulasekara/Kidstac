@@ -1,36 +1,37 @@
 import React from "react";
 import Contactus from "./Contactus";
-import logoImg from "../assets/kidstac-logo.png";
+import logoImg from "../assets/kidstack logo-outline-no-word.png";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-neutral-800 py-2 text-white">
-      <div className="container flex flex-col items-start justify-between mx-auto md:flex-row md:items-center">
-        {/* Logo and Info */}
-        <div className="flex flex-col items-start">
-          <div>
-            <img src={logoImg} className="w-auto h-40" />
+    <footer className="text-white dark:bg-neutral-800" style={{ backgroundColor: "#232b2b" }}>
+      <div className="min-h-0.5" style={{backgroundColor: "#F79733"}}></div>
+      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-10 pb-10">
+        <div className="container flex flex-col items-start justify-between mx-auto md:flex-row md:items-center">
+          {/* Logo and Info */}
+          <div className="flex flex-col items-start">
+            <div className="mb-6">
+              <img src={logoImg} className="w-auto h-40" />
+            </div>
+            <p className="w-2/3 mb-4 text-sm">
+              Unlock a world of fun and learning with Kidstack, where education
+              meets movement! Help your child grow through interactive play.
+            </p>
+            <div className="flex items-center space-x-2 text-lg text-orange-500">
+              <span>📞</span>
+              <a href="tel:+94112705357" className="font-bold">
+                +94 112 705 357
+              </a>
+            </div>
           </div>
-          <p className="mb-4 text-sm w-2/3">
-            Unlock a world of fun and learning with Kidstack, where education
-            meets movement! Help your child grow through interactive play.
-          </p>
-          <div className="flex items-center space-x-2 text-lg text-orange-500">
-            <span>📞</span>
-            <a href="tel:+1800777000" className="font-bold">
-              +94 112 705 357
-            </a>
-          </div>
+
+          {/* Company Links */}
+          <div className="mt-6 md:mt-0"></div>
+          <Contactus />
         </div>
-
-        {/* Company Links */}
-        <div className="mt-6 md:mt-0"></div>
-
-        <Contactus />
       </div>
-
-      <div className="pt-4 mt-8 text-sm text-center text-gray-500 border-t border-gray-300">
-        <p>Kidstac © All Rights Reserved - 2024</p>
+      <div className="py-4 mt-8 text-sm text-center text-white border-t border-gray-300" style={{backgroundColor: "#232b2b"}}>
+        <p className="">Kidstac © All Rights Reserved - 2024</p>
       </div>
     </footer>
   );

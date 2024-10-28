@@ -154,7 +154,7 @@ const LitSurvery = () => {
 
   return (
     <section id="kidstc-litreview">
-      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-10 pb-10">
+      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-40 pb-40">
         <div>
           <h1
             className="mb-4 text-3xl font-bold"

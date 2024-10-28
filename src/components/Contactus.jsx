@@ -5,7 +5,7 @@ const Contactus = () => {
   return (
     <section id='kidstc-contactus'>
     <div className="flex items-center justify-center">
-      <div className="relative w-full max-w-2xl p-8 rounded-3xl">
+      <div className="relative w-full max-w-2xl rounded-3xl">
 
         <div className="mb-8 text-center">
           {/* <h6 className="text-[#f4a261] uppercase tracking-wide">Contact Us</h6> */}

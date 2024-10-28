@@ -52,8 +52,8 @@ const Docs = () => {
                 </div>
               </a>
             </div>
-            <h3 className="mb-2 text-lg font-bold">{phase.title}</h3>
-            <p className="text-sm text-gray-700">{phase.description}</p>
+            <h3 className="mb-2 text-lg font-bold text-slate-50">{phase.title}</h3>
+            <p className="text-sm text-slate-300">{phase.description}</p>
           </div>
         ))}
       </div>

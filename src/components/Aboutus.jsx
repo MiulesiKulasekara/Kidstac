@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Linkedin } from 'lucide-react';
+import React from "react";
+import { Mail, Linkedin } from "lucide-react";
 import supervisorImage from "../assets/profile/supervisor.png";
 import cosupervisorImage from "../assets/profile/cosupervisor.png";
 import miulesiImage from "../assets/profile/miulesi.png";
@@ -15,7 +15,8 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
     email: "nuwan.k@sliit.lk",
-    linkedin: "https://www.linkedin.com/in/nuwan-kodagoda-a4875a4?trk=hp-identity-name"
+    linkedin:
+      "https://www.linkedin.com/in/nuwan-kodagoda-a4875a4?trk=hp-identity-name",
   },
   {
     name: "Dr. Dilshan De Silva",
@@ -24,7 +25,7 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
     email: "dilshan.i@sliit.lk",
-    linkedin: "https://www.linkedin.com/in/dilshan-de-silva-96384573/"
+    linkedin: "https://www.linkedin.com/in/dilshan-de-silva-96384573/",
   },
   {
     name: "Kulasekara D.A.M.N",
@@ -34,7 +35,7 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
     email: "miulesikulasekara00@gmail.com",
-    linkedin: "https://www.linkedin.com/in/miulesi-kulasekara-4272ab259/"
+    linkedin: "https://www.linkedin.com/in/miulesi-kulasekara-4272ab259/",
   },
   {
     name: "Nipun P.G.I",
@@ -44,7 +45,7 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
     email: "imashnipun00@gmail.com",
-    linkedin: "https://www.linkedin.com/in/imash-nipun"
+    linkedin: "https://www.linkedin.com/in/imash-nipun",
   },
   {
     name: "Manilka G. S",
@@ -54,7 +55,7 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
     email: "gsandarumanilka@gmail.com",
-    linkedin: "https://www.linkedin.com"
+    linkedin: "https://www.linkedin.com",
   },
   {
     name: "Dombawela H.M.D.L.B.A",
@@ -64,20 +65,25 @@ const memberData = [
     institution: "Sri Lanka Institute of Information Technology",
     department: "Information Technology",
     email: "dinushaariyarathna2@gmail.com",
-    linkedin: "https://www.linkedin.com/in/dinusha-ariyarathna-a9875b244/"
+    linkedin: "https://www.linkedin.com/in/dinusha-ariyarathna-a9875b244/",
   },
-  
 ];
 
 const MemberCircle = ({ member }) => (
   <div className="relative w-64 p-4 bg-white border rounded-lg shadow-lg">
     <div className="flex items-center justify-center w-32 h-32 mx-auto overflow-hidden bg-gray-200 rounded-full">
-      <img src={member.profilePic} alt={member.name} className="object-cover w-full h-full" />
+      <img
+        src={member.profilePic}
+        alt={member.name}
+        className="object-cover w-full h-full"
+      />
     </div>
     <div className="mt-4 text-center">
       <p className="text-lg font-semibold">{member.name}</p>
       <p className="text-sm font-bold text-gray-600">{member.title}</p>
-      {member.subtitle && <p className="text-sm text-gray-500">{member.subtitle}</p>}
+      {member.subtitle && (
+        <p className="text-sm text-gray-500">{member.subtitle}</p>
+      )}
       <p className="text-sm text-gray-500">{member.institution}</p>
       <p className="text-sm text-gray-500">{member.department}</p>
     </div>
@@ -85,7 +91,12 @@ const MemberCircle = ({ member }) => (
       <a href={`mailto:${member.email}`} className="p-2 bg-white rounded-full ">
         <Mail size={20} color="#F79733" />
       </a>
-      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full">
+      <a
+        href={member.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-white rounded-full"
+      >
         <Linkedin size={20} color="#F79733" />
       </a>
     </div>
@@ -94,20 +105,29 @@ const MemberCircle = ({ member }) => (
 
 const Aboutus = () => {
   return (
-    <section id='kidstc-aboutus'>
-    <div className="container px-4 py-8 mx-auto">
-      <div className="flex justify-center gap-8 mb-8">
-        {memberData.slice(0, 2).map((member, index) => (
-          <MemberCircle key={index} member={member} />
-        ))}
-      </div>
+    <section id="kidstc-aboutus">
+    <div className="min-h-0.5"></div>
+      <div style={{ backgroundColor: "#232b2b" }} className="px-20 pt-40 pb-40">
+        <div>
+          <h1
+            className="mb-8 text-3xl font-bold text-left"
+            style={{ color: "#F79733" }}
+          >
+            Our Team
+          </h1>
+        </div>
+        <div className="flex justify-center gap-8 mb-8">
+          {memberData.slice(0, 2).map((member, index) => (
+            <MemberCircle key={index} member={member} />
+          ))}
+        </div>
 
-      <div className="flex flex-wrap justify-center gap-8">
-        {memberData.slice(2).map((member, index) => (
-          <MemberCircle key={index + 2} member={member} />
-        ))}
+        <div className="flex flex-wrap justify-center gap-8">
+          {memberData.slice(2).map((member, index) => (
+            <MemberCircle key={index + 2} member={member} />
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

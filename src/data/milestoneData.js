@@ -1,25 +1,25 @@
 export const data = [
   {
     year: "2024",
-    month: "March",
+    month: "February",
     title: "PROJECT PROPOSAL",
     purpose: "Present project for approval or funding.",
     description:
       "This phase involves the initial proposal of the research idea, including the project's objectives, methodology, and expected outcomes.",
-    marks: 6,
+    marks: 12,
   },
   {
     year: "2024",
-    month: "June",
+    month: "May",
     title: "PROGRESS PRESENTATION 01",
     purpose: "Review 50% project completion and identify gaps.",
     description:
       "This presentation reviews the progress at the midpoint, ensuring key milestones have been met and identifying areas for improvement.",
-    marks: 6,
+    marks: 15,
   },
   {
     year: "2024",
-    month: "July",
+    month: "June",
     title: "RESEARCH PAPER",
     purpose: "Contribute to existing knowledge, acknowledging references.",
     description:
@@ -52,7 +52,7 @@ export const data = [
     purpose: "Validate project status through logbook entries and status documents",
     description:
       "The logbook records the day-to-day progress of the project to ensure that all tasks and responsibilities are documented.",
-    marks: 3,
+    marks: 2,
   },
   {
     year: "2024",

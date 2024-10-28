@@ -14,7 +14,7 @@ const NavBar = () => {
     "block py-2 px-4 hover:bg-[#F79733] text-sm font-bold";
 
   return (
-    <nav className="relative flex items-center justify-center py-8">
+    <nav className="relative z-50 flex items-center justify-center py-8">
       <div className="relative flex items-center justify-between px-4 py-4 bg-white rounded-full shadow-lg md:px-8">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -38,7 +38,7 @@ const NavBar = () => {
               onMouseLeave={() => setIsDomainOpen(false)}
               className="relative"
             >
-              <a href="#kidstc-projectscope" className={navItemClasses}>
+              <a href="" className={navItemClasses}>
                 Project Scope
               </a>
               {isDomainOpen && (
@@ -75,15 +75,15 @@ const NavBar = () => {
               onMouseLeave={() => setIsDownloadsOpen(false)}
               className="relative"
             >
-              <a href="#kidstc-downloads" className={`${navItemClasses} ml-24`}>
+              <a href="" className={`${navItemClasses} ml-24`}>
                 Downloads
               </a>
               {isDownloadsOpen && (
                 <div className="absolute left-0 z-10 py-2 bg-white rounded-md shadow-lg top-full">
-                  <a href="#kidstc-documents" className={dropdownItemClasses}>
+                  <a href="#kidstc-downloads" className={dropdownItemClasses}>
                     Documents
                   </a>
-                  <a href="#kidstc-presentation" className={dropdownItemClasses}>
+                  <a href="#kidstc-downloads" className={dropdownItemClasses}>
                     Presentation Slides
                   </a>
                 </div>
